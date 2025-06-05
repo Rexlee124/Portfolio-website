@@ -7,49 +7,51 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
       padding: 20px;
-    }
-    header {
+      background-color: #f5f5f5;
       text-align: center;
-      margin-bottom: 30px;
     }
     img {
-      width: 150px;
-      border-radius: 50%;
+      width: 100%;
+      max-width: 600px;
+      border-radius: 10px;
+      margin-top: 10px;
     }
-    .project, .contact {
-      background-color: white;
-      padding: 20px;
-      border-radius: 8px;
-      margin-bottom: 20px;
+    #moreInfo {
+      display: none;
+      margin-top: 20px;
+      font-size: 18px;
+      color: #333;
     }
-    h1 {
-      color: #2c3e50;
+    button {
+      padding: 10px 20px;
+      background-color: #2c3e50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <img src="https://via.placeholder.com/150" alt="Rexlee's Image" />
-    <h1>Welcome to Rexlee's Portfolio</h1>
-    <p>This is my personal website. I created and own this space to showcase my work and make it easier for people to reach out.</p>
-  </header>
+  <h1>Welcome to Rexlee's Portfolio</h1>
+  <p>This is my personal website. I created and own this space to showcase my work and make it easier for people to reach out.</p>
 
-  <div class="project">
-    <h2>Project 1: Weather App</h2>
-    <p>A web app that shows real-time weather data using API calls. Built with HTML, CSS, and JavaScript.</p>
+  <img src="https://via.placeholder.com/600x300.png?text=Welcome+to+My+Portfolio" alt="Welcome Image" />
+
+  <!-- Show More Section -->
+  <button onclick="document.getElementById('moreInfo').style.display='block'">Show More</button>
+  <div id="moreInfo">
+    <p>I'm a beginner developer. I build websites and I'm also open to freelance work.</p>
   </div>
 
-  <div class="contact">
-    <h2>Contact Me</h2>
-    <p><strong>Email:</strong> <a href="mailto:leerex393@gmail.com">leerex393@gmail.com</a></p>
-    <p><strong>WhatsApp:</strong> <a href="https://wa.me/qr/IEC6QLTWUZ4UF1" target="_blank">Chat with me on WhatsApp</a></p>
-  </div>
+  <hr />
 
-  <script>
-    console.log("Welcome to Rexlee's Portfolio Site!");
-  </script>
+  <h2>Contact Me</h2>
+  <p><strong>Email:</strong> <a href="mailto:leerex393@gmail.com">leerex393@gmail.com</a></p>
+  <p><strong>WhatsApp:</strong> <a href="https://wa.me/qr/IEC6QLTWUZ4UF1" target="_blank">Chat with me on WhatsApp</a></p>
+
 </body>
 </html>
