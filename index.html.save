@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rexlee's Portfolio</title>
+</head>
+<body>
+
+  <h1>Welcome to Rexlee's Portfolio</h1>
+  <p>This is my personal website. I created and own this space to showcase my work and make it easier for people to reach out.</p>
+
+  <button onclick="showMore()">Show More About Me</button>
+  <p id="moreInfo" style="display: none;">
+    I'm Rexlee, a beginner developer learning web development with HTML, CSS, and JavaScript. I enjoy building cool things with code and I’m open to freelance work and collaborations.
+  </p>
+
+  <hr />
+
+  <h2>Project 1: Weather App</h2>
+  <p>A web app that shows real-time weather data using API calls. Built with HTML, CSS, and JavaScript.</p>
+
+  <hr />
+
+  <h2>Contact Me</h2>
+  <p><strong>Email:</strong> <a href="mailto:leerex393@gmail.com">leerex393@gmail.com</a></p>
+  <p><strong>WhatsApp:</strong> <a href="https://wa.me/qr/IEC6QLTWUZ4UF1" target="_blank">Chat with me on WhatsApp</a></p>
+
+  <script>
+    function showMore() {
+      const info = document.getElementById("moreInfo");
+      if (info.style.display === "none") {
+        info.style.display = "block";
+      } else {
+        info.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
+</html>
